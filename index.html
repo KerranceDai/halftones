@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halftones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Halftones in CMYK</h1>
+    <div id="content">
+        <canvas id="canvas"></canvas>
+        <div id="controls">
+            <table>
+                <tr>
+                    <td></td>
+                    <td>Angle</td>
+                    <td>Offset X</td>
+                    <td>Offset Y</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td class="slider"><input type="range" id="cSlider" min="0" max="180"></td>
+                    <td class="slider"><input type="range" id="cOffsetX" min="-100" max="100"></td>
+                    <td class="slider"><input type="range" id="cOffsetY" min="-100" max="100"></td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td class="slider"><input type="range" id="mSlider" min="0" max="180"></td>
+                    <td class="slider"><input type="range" id="mOffsetX" min="-100" max="100"></td>
+                    <td class="slider"><input type="range" id="mOffsetY" min="-100" max="100"></td>
+                </tr>
+                <tr>
+                    <td>Y</td>
+                    <td class="slider"><input type="range" id="ySlider" min="0" max="180"></td>
+                    <td class="slider"><input type="range" id="yOffsetX" min="-100" max="100"></td>
+                    <td class="slider"><input type="range" id="yOffsetY" min="-100" max="100"></td>
+                </tr>
+                <tr>
+                    <td>K</td>
+                    <td class="slider"><input type="range" id="kSlider" min="0" max="180"></td>
+                    <td class="slider"><input type="range" id="kOffsetX" min="-100" max="100"></td>
+                    <td class="slider"><input type="range" id="kOffsetY" min="-100" max="100"></td>
+                </tr>
+                <tr style="height: 40px"></tr>
+                <tr>
+                    <td>X</td>
+                    <td class="slider"><input type="range" id="x-slider" min="3" max="81"></td>
+                </tr>
+                <tr>
+                    <td>Y</td>
+                    <td class="slider"><input type="range" id="y-slider" min="3" max="81"></td>
+                </tr>
+                <tr>
+                    <td>Zoom</td>
+                    <td class="slider"><input type="range" id="size-slider" min="1" max="20"></td>
+                </tr>
+            </table>
+            <button id="resetButton">Reset</button>
+
+            <div style="height: 120px"></div>
+            <p>References:</p>
+            <p>"<a href="https://www.youtube.com/watch?v=VckU9UXI_XE">Dots</a>" by Posy</p>
+            <p>"<a href="http://the-print-guide.blogspot.com/2009/05/halftone-screen-angles.html">The Print Guide</a>" by Gordon Pritchard</p>
+        </div>
+    </div>
+
+    <script src="src/Slider.js"></script>
+    <script src="src/index.js"></script>
+
+</body>
+</html>
+
